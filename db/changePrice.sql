@@ -1,0 +1,1 @@
+UPDATE sell_item SET price = $1 WHERE item_id = $2;

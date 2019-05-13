@@ -1,0 +1,180 @@
+.sell-compenent{
+    /* border:3px solid #00AA80; */
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    /* margin: 0 auto; */
+    justify-content: center;
+    align-content: center;
+
+    
+    
+
+    
+
+}
+.both-from{
+    height: 100%;
+    width: 100%;
+    display: flex;
+     justify-content: center;
+    /* text-align: center;
+    font-size:20px; */ 
+
+    
+}
+
+.sell-info-card {
+   height: 100%;
+   width: 20%;
+    border: 2px #00AA80 solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+.sell-info-card input{
+    
+    width: 80%;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px #00AA80 solid;
+    outline: none;
+
+}
+.description-input{
+    width: 80%;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px #00AA80 solid;
+    outline: none;
+
+}
+
+
+
+
+/* .sell-pic{
+    height: 800px;
+    width: 600px;
+    bordre: 1px red solid;
+    
+} */
+.sell-pic img{
+    max-height: 600px;
+ 
+}
+
+form > h1 {
+    font-size: 70px;
+    text-align: center;
+    color: #00AA80;
+   
+}
+
+
+ /* .pic-card{
+    border: 2px blue solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+     width: 60%; 
+    height:100%
+    
+}  */
+
+.sell-btn{
+    color: white;
+    background: #00AA80;
+    font-size: 15px;
+    border-radius: 10px;
+    height:30px;
+    width: 110px;
+    border:2px solid white;
+}
+.upload-btn{
+
+
+}
+/* .file-icom::-webkit-file-upload-button {
+    color: white;
+    background: #00AA80;
+    border:2px solid white;
+    font-size: 15px;
+
+} */
+
+label.myLabel input[type="file"] {
+    position:absolute;
+    top: -1000px;
+}
+
+/***** Example custom styling *****/
+.myLabel {
+    border: 2px solid #AAA;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin: 2px;
+    color: white;
+    background: #00AA80;
+    display: inline-block;
+}
+.myLabel:hover {
+    /* background: #CCC; */
+    background: #00AA80;
+    color:#00aa80;
+}
+.myLabel:active {
+    background: #CCF;
+}
+.myLabel :invalid + span {
+    color: #A44;
+}
+.myLabel :valid + span {
+    color:white;
+}
+
+@media(max-width:1150px){
+    .sell-compenent{
+        height: 100%;
+        width: 100%
+    }
+    .sell-pic img{
+        max-width: 300px;
+    }
+}
+
+@media(max-width:800px){
+    .sell-compenent{
+        height: 100%;
+        width: 100%
+    }
+    .both-from{
+       display: flex;
+       flex-direction: column-reverse; 
+    }
+    .sell-info-card{
+        height: 100%;
+        width: 100%
+    }
+    .sell-pic{
+        width: 100%;
+    }
+    .sell-pic img{
+        max-width: 100%;
+    }
+    .sell-info-card input{
+        width: 50%;
+        margin: 0 auto;
+
+    }
+    .description-input{
+        width: 50%;
+    }
+}
+

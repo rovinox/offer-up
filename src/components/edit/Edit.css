@@ -1,0 +1,66 @@
+.main-edit{
+    height: 100vh;
+    width: 80vw;
+   
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .main-edit h1 {
+    font-size: 40px;
+    color:#00AA80
+  }
+
+  .edit-card {
+      height: 100%;
+      width: 100%;
+      
+      display: flex;
+     justify-content: center;
+    align-items: center; 
+
+  }
+.edit-card-pic{
+    height: 50%;
+      
+     
+
+}
+  
+.edit-form{
+    height: 50%;
+    width: 50%;
+     /* display: flex;
+    flex-direction: column; */
+}   
+
+.change-input{
+  font-size: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px  #00AA80 solid;
+    outline: none;
+}
+
+@media(max-width:800px){
+
+      .main-edit{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .main-edit h1{
+          display: none;
+      }
+      .edit-card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+      }
+
+}

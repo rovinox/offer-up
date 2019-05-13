@@ -1,0 +1,1 @@
+SELECT user_id FROM sell_item WHERE item_id = $1;

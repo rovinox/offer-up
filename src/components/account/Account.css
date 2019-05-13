@@ -1,0 +1,66 @@
+.acc-component{
+  height: 100vh;
+  width: 100vw;
+   display: flex; 
+  /* justify-content: space-around;  */
+
+}
+
+
+
+.profile-pic{
+  height: 200px;
+  width: 200px;
+  border: 1px solid red;
+  border-radius: 50%;
+ 
+  
+}
+
+.profile-pic-side{
+  /* height: 100vh; */
+  width: 20vw;
+  background: #ee5959 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-acc{
+  height: 100vh;
+  width: 80vw;
+  
+}
+
+.post-pic{
+ max-width: 150px;
+}
+.post-card{
+  height: 200px;
+  width: 200px;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-acc h1{
+  color: #00aa80;
+  text-align: center;
+  
+} 
+@media(max-width:1000px){
+   .acc-component{
+     height: 100%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+   }
+   .profile-pic-side{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   }
+   
+}

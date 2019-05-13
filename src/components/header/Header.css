@@ -1,0 +1,281 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+body {
+    font-family: 'Domine', serif;
+ background: rgb(223, 213, 214)
+   
+}
+.nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:#00AA80;
+    position: sticky;
+    top: 0;
+    
+}
+.nav-items{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.search{
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 50%;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    border:2px solid white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    background: #00AA80;
+    transition: 1s;
+
+
+}
+
+.mainLoginInput:focus {
+    width: 80%;
+    transition: 1s;
+    font-size: 20px;
+  }
+
+
+
+
+.search-form{
+    height: 40px;
+    width: 400px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.search-btn{
+    color: white;
+    background: #00AA80;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    
+    
+}
+
+
+.burger-items li {
+    list-style-type: none;
+    /* text-decoration: none; */
+    
+   
+    margin-top: 10px;
+    color: white;
+    
+}
+a {
+    text-decoration: none;
+
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:white;
+    opacity: 1; /* Firefox */
+  }
+.search:focus {
+    width: 80%;
+    transition: 1s;
+    font-size: 20px;
+  }
+
+/* .menu {
+    width: 70vw;
+    height: 90vh;
+    position: absolute;
+    top: 9vh;
+    left: 0px;
+    background: gray;
+} */
+
+.menu-close {
+    width: 50vw;
+    height: 45vh;
+    position: absolute;
+    top: 10.5vh;
+    right: 0px;
+    background:  rgb(238, 234, 234);
+    animation: closeMenu 1s;
+    animation-fill-mode: forwards;
+    list-style-type: none;
+    font-size: 30px;
+    border:1px solid #01A9FF;
+    display: none;
+
+}
+
+.menu-open {
+    width: 50vw;
+    height: 45vh;
+    position: absolute;
+    top: 10.5vh;
+    right: 0px;
+    background: #00AA80;
+    animation: openMenu 1.5s;
+    list-style-type: none;
+    border-radius: 10px;
+    font-size: 30px;
+    list-style-type: none;
+    
+   
+}
+
+
+.logo{
+    /* border: 1px red solid; 
+    height: 100%;
+    width: 5%; */
+    /* margin-bottom: 10px; */
+    animation-duration: 3s;
+    animation-delay: .5s;
+    
+
+    
+}
+.logo img {
+    border-radius: 50%;
+    max-width: 90px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+
+}
+.sell{
+   
+    animation-duration: 1s;
+    animation-delay: .5s;
+    font-size: 25px;
+    /* background: #01A9FF; */
+    border-radius: 5px;
+    text-align: center;
+    /* width: 120%;
+    height: 40%; */
+    color:white;
+   
+    
+    
+
+}
+
+.signup{
+    color:white;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    height: 40%;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    font-size: 25px;
+
+}
+
+.login{
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    height: 40%;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    font-size: 25px;
+    color:white;
+
+
+}
+
+@keyframes openMenu {
+    0% {
+        width: 0vw;
+        
+    }
+
+    100% {
+        width: 50vw;
+    }
+}
+
+@keyframes closeMenu {
+    0% {
+        width: 50vw;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+
+.fa-bars{
+    display: none;
+    
+}
+
+
+@media(max-width:800px){
+    .fa-bars{
+        display: block;
+      
+    }
+    .nav-items{
+        display: none;
+
+    }
+    .search{
+        display: none;
+    }
+    .search-btn{
+    display: none;
+    }
+    .search-form{
+        display: none;
+    }
+    .fa-bars{
+        margin-left: 200px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+.mainLoginInput{
+    height: 30px;
+    width: 100px;
+    padding: 0px;
+    font-size: 30px;
+    margin: 5px 0;
+    background: #00AA80;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 1s;
+
+  }
+  
+  .mainLoginInput::-webkit-input-placeholder { 
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color: white;
+  }
+  

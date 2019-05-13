@@ -1,0 +1,1 @@
+SELECT * FROM sell_item WHERE item_id = $1;

@@ -1,0 +1,150 @@
+.item-component{
+    display: flex;
+    /* height: 100vh;
+    width: 100vw; */
+    justify-content: center;
+    
+}
+
+
+
+
+.sell-item-info{
+
+   height: 100%;
+    /* width: 60vw; */
+    border: 2px #00aa80 solid;
+    
+
+}
+
+.pictire-card-and-side{
+    height:70%;
+    width: 100%;
+    border: 1px #00aa80 solid;
+    display: flex;
+    justify-content: space-between;
+}
+.pic-side{
+    width: 100%;
+    height: 100%;
+    
+}
+.sell-pic{
+    /* height: 600px;
+    width: 600px; */
+    width: 70%;
+  
+}
+.info-side{
+  
+   height: 400px;
+   width: 400px;
+   font-size: 17px;
+   text-align: center;
+   margin-right: 30px;
+   /* display: flex;
+   flex-wrap: wrap; */
+   
+   
+}
+.price{
+    color:#B12704;
+    font-size: 25px;
+ 
+}
+.item-name{
+    font-size: 25px;
+}
+
+
+.two-btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.two-btn button {
+    font-size: 15px;
+    border-radius: 10px;
+
+}
+
+
+.top-rated{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+    
+
+}
+.top-rated p{
+    color:red;
+    font-size: 100%;
+}
+
+.toprated-pic{
+    height: 80px;
+    width: 80px;
+    margin-top: 5px;
+}
+.toprated-pic:hover{
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px rgb(139, 139, 139);
+
+
+  }  
+
+.icon{
+    font-size: 40px;
+    color:yellow;
+
+}
+.seller-pic{
+    max-height: 100px;
+    border-radius: 50%;
+    border: 3px red solid;
+   
+}
+.seller-info{
+    text-align: center;
+    background:#ee5959;
+    height: 100%;
+
+}
+
+
+@media(max-width:1000px){
+    .item-component{
+        height: 100%;
+        width: 100%
+    }
+    .pictire-card-and-side{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+    .info-side{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+
+    }
+    .top-rated{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+}
+}
