@@ -81,9 +81,7 @@ AWS.config.update({
         }
       });
   });
-  app.get('*', (req, res)=>{
-    res.sendFile(path.join(__dirname, '../build/index.html'));
-});
+ 
 app.post("/api/signup", Ac.signupUser)
 app.post("/api/login", Ac.login)
 app.post("/api/sell", Ac.addItem)
@@ -137,7 +135,9 @@ app.post("/api/checkout", async (req, res) =>{
   res.json({error,status})
 })
 
-
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 
 
 
