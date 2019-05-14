@@ -1,5 +1,5 @@
 .login-component{
-    height: 100vh;
+    height: 80vh;
     width: 50vw;
     display:flex;
     justify-content: center;
@@ -10,7 +10,7 @@
 
 
 .login-info{
-    height: 50%;
+    height: 100%;
     width: 50%;
     border: 3px #00AA80 solid;
     margin: 0 auto;
@@ -43,7 +43,7 @@
 
 @media(max-width:1030px){
     .login-component{
-        width: 100%
+        width: 80%
     }
     .login-info{
         width: 50%;
@@ -54,7 +54,7 @@
 
 @media(max-width:800px){
     .login-component{
-        width: 100%
+        width: 80%
     }
     .login-info{
         width: 100%;

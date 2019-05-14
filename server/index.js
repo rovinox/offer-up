@@ -16,6 +16,7 @@ const path = require('path');
 
 // const {uploadFile} = require("react-s3")
 app.use(express.json())
+app.use( express.static( `${__dirname}/../build` ) );
 
 app.use(cors())
 const {SERVER_PORT, CONNECTING_STRING, SECRET} = process.env

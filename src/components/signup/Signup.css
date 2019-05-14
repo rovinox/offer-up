@@ -1,5 +1,5 @@
 .signup-compenent{
-    height: 100vh;
+    height: 80vh;
     width: 50vw;
     display:flex;
     justify-content: center;
@@ -9,7 +9,7 @@
     
 }
 .signup-info{
-    height: 70%;
+    /* height: 70%; */
     width: 50%;
     border: 3px  #00AA80 solid;
     margin: 0 auto;
