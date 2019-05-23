@@ -2,8 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-    width: 90vw;
-   justify-content:space-between;
+    width: 100vw;
+   justify-content:space-evenly;
    align-items: center;
    margin: 0 auto;
 
@@ -24,8 +24,8 @@
     width: 270px;
     border: 3px #00aa80 solid;
     border-radius: 10px;
-   margin-top: 30px;
-   text-align: center;
+    margin-top: 30px;
+    text-align: center;
    
 
    

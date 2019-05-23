@@ -148,7 +148,7 @@ a {
 }
 .logo img {
     border-radius: 50%;
-    max-width: 90px;
+    max-width: 20%;
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;

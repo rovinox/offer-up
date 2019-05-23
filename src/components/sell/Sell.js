@@ -84,7 +84,7 @@ import {Link} from "react-router-dom"
      
      <div className="sell-pic">
      {/* <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/10best-cars-group-cropped-1542126037.jpg"/> */}
-     <img src={this.state.picture} alt="pic"></img>
+     <img src={this.state.picture} alt=""></img>
      </div>
      
       

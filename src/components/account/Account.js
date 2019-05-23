@@ -64,7 +64,7 @@ handleDelete = (id) =>{
      
        return <div className="post-card" >
          <p>${post.price}</p>
-         <img className="post-pic" src={post.picture} alt="pic"></img>
+         <img className="post-pic" src={post.picture} alt=""></img>
          <Link to={`/edit/${post.item_id}`}>
          <button className="sell-btn">Change Price</button>
          </Link>

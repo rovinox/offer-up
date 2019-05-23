@@ -25,8 +25,12 @@ export default class Message extends Component {
   handleSubmit = (e) =>{
     e.preventDefault() 
     const {name,message,email} = this.state
-    axios.post(`/api/email`,{name,message,email})
-    toast("Message Sent", { type: "success" });
+    axios.post(`/api/email`,{name,message,email}).then(response=>{
+      if(response.status===200){
+
+        toast("Message Sent", { type: "success" });
+      }
+    })
 
   }
 
